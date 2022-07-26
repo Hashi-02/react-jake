@@ -1,4 +1,5 @@
-export const ChildArea = (props) => {
+import { memo } from 'react';
+export const ChildArea = memo((props) => {
   const { open } = props;
   //文字入力やボタン押下でレンダリングされる
   const data = [...Array(2000).keys()];
@@ -16,4 +17,4 @@ export const ChildArea = (props) => {
       ) : null}
     </>
   );
-};
+});
