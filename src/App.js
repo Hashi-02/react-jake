@@ -2,6 +2,7 @@ import './App.css';
 import { InlineStyle } from './components/InlineStyle';
 import { CssModules } from './components/CssModules';
 import { StyledJsx } from './components/StyledJsx';
+import { StyledComponets } from './components/StyledComponets';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <InlineStyle />
       <CssModules />
       <StyledJsx />
+      <StyledComponets />
     </div>
   );
 }
