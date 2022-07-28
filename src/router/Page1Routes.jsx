@@ -4,17 +4,17 @@ import { Page1DetailB } from '../components5/Page1DetailB';
 export const page1Routes = [
   {
     path: '/',
-    exact: 'true',
+    exact: true,
     childlen: <Page1 />,
   },
   {
     path: '/detailA',
-    exact: 'false',
+    exact: false,
     childlen: <Page1DetailA />,
   },
   {
     path: '/detailB',
-    exact: 'false',
+    exact: false,
     childlen: <Page1DetailB />,
   },
 ];
