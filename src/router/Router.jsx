@@ -1,8 +1,8 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { Home } from '../components5/Home';
-import { Page2 } from '../components5/Page2';
 import { page1Routes } from './Page1Routes';
+import { page2Routes } from './Page2Routes';
 export const Router = () => {
   return (
     <Switch>
@@ -35,10 +35,22 @@ export const Router = () => {
           </Switch>
         )}
       />
-
-      <Route path="/page2">
-        <Page2 />
-      </Route>
+      <Route
+        path="/page2"
+        render={({ match: { url } }) => (
+          <Switch>
+            {page2Routes.map((route) => (
+              <Route
+                key={route.path}
+                exact={route.exact}
+                path={`${url}${route.path}`}
+              >
+                {route.childlen}
+              </Route>
+            ))}
+          </Switch>
+        )}
+      />
     </Switch>
   );
 };
