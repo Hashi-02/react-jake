@@ -6,6 +6,8 @@ export const Page2 = () => {
     <div>
       <h1>Page2</h1>
       <Link to="/page2/100">URL パラメーター</Link>
+      <br />
+      <Link to="/page2/100?name=hogehoge">クエリパラメーター</Link>
     </div>
   );
 };
