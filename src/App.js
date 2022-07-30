@@ -5,7 +5,6 @@ import { SecondaryButton } from './components6/Atoms/button/SecondaryButton';
 import { SearchInput } from './components6/molecules/SearchInput';
 import { UserCard } from './components6/organisms/user/UserCard';
 import { DefaultLayouts } from './components6/templates/DefaultLayouts';
-import { HeaderOnly } from './components6/templates/HeaderOnly';
 
 function App() {
   const user = {

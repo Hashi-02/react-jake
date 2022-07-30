@@ -3,13 +3,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const Footer = () => {
-  return (
-    <SFooter>
-      &copy; 2022 react-udemy
-      {/* <SLink to="/">HOME</SLink>
-      <SLink to="/user">USERS</SLink> */}
-    </SFooter>
-  );
+  return <SFooter>&copy; 2022 react-udemy</SFooter>;
 };
 
 const SFooter = styled.header`
@@ -21,6 +15,3 @@ const SFooter = styled.header`
   bottom: 0;
   width: 100%;
 `;
-// const SLink = styled(Link)`
-//   margin: 0 8px;
-// `;
