@@ -1,8 +1,11 @@
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import { PrimaryButton } from './components6/Atoms/button/PrimaryButton';
 import { SecondaryButton } from './components6/Atoms/button/SecondaryButton';
 import { SearchInput } from './components6/molecules/SearchInput';
 import { UserCard } from './components6/organisms/user/UserCard';
+import { DefaultLayouts } from './components6/templates/DefaultLayouts';
+import { HeaderOnly } from './components6/templates/HeaderOnly';
 
 function App() {
   const user = {
@@ -16,13 +19,15 @@ function App() {
     website: 'https://google.com',
   };
   return (
-    <div className="App">
-      <PrimaryButton>テスト</PrimaryButton>
-      <SecondaryButton>テスト</SecondaryButton>
-      <br />
-      <SearchInput />
-      <UserCard user={user} />
-    </div>
+    <BrowserRouter>
+      <DefaultLayouts>
+        <PrimaryButton>テスト</PrimaryButton>
+        <SecondaryButton>テスト</SecondaryButton>
+        <br />
+        <SearchInput />
+        <UserCard user={user} />
+      </DefaultLayouts>
+    </BrowserRouter>
   );
 }
 
