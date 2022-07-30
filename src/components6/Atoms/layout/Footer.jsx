@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
 export const Footer = () => {
   return <SFooter>&copy; 2022 react-udemy</SFooter>;
